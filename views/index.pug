@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+  head
+    style 
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo 
+          img(src="static/img/1.png", alt="")
+          | VDA
+        li #[a(href="/") Home ]
+        li #[a(href="/") Services ]
+        li #[a(href="/") About ]
+        li #[a(href="/") Class Info ]
+        li #[a(href="/") Contact Us]
+    section#introSection
+      div Welcome to Vikas Dance Academy
+      div.small Eat Sleep Dance Repeat 
+    section#missionSection 
+      h2 Our Mission 
+      div.card 
+        h3 Dance Perfaction
+        div.card-box 
+          div.card-img
+            img(src="static/img/2.png", alt="")
+          div.card-content 
+            |This is the best dance academy in universe
+      div.card 
+        h3 Dance the way you like
+        div.card-box 
+          div.card-img
+            img(src="static/img/3.png", alt="")
+          div.card-content 
+            |This is the best dance academy in universe
+      div.card 
+        h3 Multiple form of Dance
+        div.card-box 
+          div.card-img
+            img(src="static/img/4.png", alt="")
+          div.card-content 
+            |This is the best dance academy in universe
+    section#sponserSection 
+      h2 Our Sponsers 
+      div#sponsers 
+        img(src="static/img/5.png", alt="sponcerImage ",class="spImage")
+        img(src="static/img/6.png", alt="sponcerImage ",class="spImage")
+        img(src="static/img/7.png", alt="sponcerImage ",class="spImage")
+        img(src="static/img/8.png", alt="sponcerImage ",class="spImage")
+
+      
+    section#footer 
+      |copyright @ 2019 VikasDanceAcademy.com
+    
+    script 
+        include ../static/index.js
+    
